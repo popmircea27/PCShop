@@ -9,6 +9,8 @@ import LoginSignIn from './navBarWindows/userPanel/LoginSingIn'
 import VCadou from './navBarWindows/Vouchere Cadou/VCadou'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import UserPanel from './navBarWindows/userPanel/UserPanel'
+import zoneActivitate from './navBarWindows/zoneActivitate/zoneActivitate'
+import ZoneActivitate from './navBarWindows/zoneActivitate/zoneActivitate'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
                 <Route path="/user-panel" element={<UserPanel />} />
                 <Route path="/login-signIn" element={<LoginSignIn />} />
                 <Route path="/vouchere-cadou" element={<VCadou/>} />
+                <Route path="/zone-activitate" element={<ZoneActivitate/>} />
+
             </Routes>
         </Router>
       </>
