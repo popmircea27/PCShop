@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.body-zone-activitate{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background:linear-gradient(to right, #fff,#ffffff);
+    border-radius: 30px;
+    height:1000px;
+    width: 90%;
+}
+.bull-icon {
+    width: 75px; 
+    height: auto;
+    margin-right: 10px;
+}
