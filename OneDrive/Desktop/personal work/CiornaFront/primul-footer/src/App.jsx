@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import UserPanel from './navBarWindows/userPanel/UserPanel'
 import zoneActivitate from './navBarWindows/zoneActivitate/zoneActivitate'
 import ZoneActivitate from './navBarWindows/zoneActivitate/zoneActivitate'
-
+import Evenimente from './navBarWindows/Evenimente/Evenimente'
 function App() {
   return (
       <>
@@ -22,6 +22,7 @@ function App() {
                 <Route path="/login-signIn" element={<LoginSignIn />} />
                 <Route path="/vouchere-cadou" element={<VCadou/>} />
                 <Route path="/zone-activitate" element={<ZoneActivitate/>} />
+                <Route path="/evenimente" element={<Evenimente/>} />
 
             </Routes>
         </Router>
