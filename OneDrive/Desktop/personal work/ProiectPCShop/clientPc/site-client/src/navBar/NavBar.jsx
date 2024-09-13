@@ -3,7 +3,8 @@ import Logo from "../components/logo/Logo";
 import TransparentButton from "../components/buttons/TransparentButton";
 import userIcon from '../navBar/navBarAssets/user.svg'; 
 import searchIcon from '../navBar/navBarAssets/search.svg';
-
+import "../navBar/navBarStyle.css";
+import TransparentWhite from "../components/buttons/TranspararentWhite";
 function NavBar() {
     const handleClickUser = () => {
         window.location.href = '/user';
@@ -24,8 +25,8 @@ function NavBar() {
 
                 <div className="button-container">
                     <TransparentButton text={"Laptops"} path={'/laptops'} />
-                    <TransparentButton text={"PC Office&Gaming"} path={'/'} />
-                    <TransparentButton text={"Components"} path={'/'} />
+                    <TransparentWhite  text={"PC Office&Gaming"} path={'/'}/>  
+                    <TransparentWhite  text={"Components"} path={'/'} />      
                     <TransparentButton text={"Periferics"} path={'/'} />
                 </div>
 

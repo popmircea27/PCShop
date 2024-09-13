@@ -3,5 +3,26 @@
     display: flex;
     justify-content: center;
     background: transparent;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Sora", sans-serif;
+    border: none;
+    font-size: 16px;
+}
+
+
+.sora-button {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.transparent-button-white {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    font-family: "Sora", sans-serif;
+    border: none;
+    font-size: 16px;
+    color: white; /* Makes the text color white */
 }

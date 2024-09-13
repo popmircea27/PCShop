@@ -1,0 +1,100 @@
+
+body{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 6%, rgba(128,128,224,1) 46%, rgba(255,255,255,1) 100%);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    box-sizing: border-box; 
+    
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1; 
+    justify-content: center; 
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-button, .user-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button img, .user-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0 10px;
+    }
+    .search-button img, .user-button img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .user-container {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-container h3 {
+        display: none; /* Hides shop text on smaller screens */
+    }
+    .button-container {
+        display: none; /* Hides buttons on smaller screens */
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+.teko-heading {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.logo-container h3{
+    font-family:"Teko", sans-serif;
+}
+
+

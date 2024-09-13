@@ -23,7 +23,7 @@ const buttonVars = {
     }
 };
 
-function TransparentButton(props) {
+function TransparentWhite(props) {
     const handleClick = () => {
         if (props.path) {
             window.location.href = props.path;
@@ -32,7 +32,7 @@ function TransparentButton(props) {
 
     return (
         <motion.button
-            className="transparent-button"
+            className="transparent-button-white"
             variants={buttonVars}
             initial="hidden"
             animate="visible"
@@ -46,14 +46,14 @@ function TransparentButton(props) {
 }
 
 // Corrected propTypes and defaultProps for TransparentButton
-TransparentButton.propTypes = {
+TransparentWhite.propTypes = {
     text: PropTypes.string,
     path: PropTypes.string, 
 };
 
-TransparentButton.defaultProps = {
+TransparentWhite.defaultProps = {
     text: "Default Text",
     path: "#", 
 };
 
-export default TransparentButton;
+export default TransparentWhite;
