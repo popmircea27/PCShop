@@ -1,8 +1,10 @@
 import React from "react";
 import Logo from "../components/logo/Logo";
 import TransparentButton from "../components/buttons/TransparentButton";
+
 import userIcon from '../navBar/navBarAssets/user.svg'; 
 import searchIcon from '../navBar/navBarAssets/search.svg';
+import cartIcon from '../navBar/navBarAssets/cart.svg';
 import "../navBar/navBarStyle.css";
 import TransparentWhite from "../components/buttons/TranspararentWhite";
 function NavBar() {
@@ -15,6 +17,10 @@ function NavBar() {
         
     };
 
+    const handleClickCart = () => {
+    
+        
+    };
     return (
         <>
             <div className="navbar">
@@ -36,6 +42,9 @@ function NavBar() {
                     </button>
                     <button className="user-button" onClick={handleClickUser}>
                         <img src={userIcon} alt="User Icon" />
+                    </button>
+                    <button className="user-button" onClick={handleClickCart}>
+                        <img src={cartIcon} alt="cart Icon" />
                     </button>
                 </div>
             </div>

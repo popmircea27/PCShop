@@ -1,0 +1,67 @@
+.footer {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 6%, rgba(128,128,224,1) 46%, rgba(255,255,255,1) 100%);
+    color: white; /* Set text color to white */
+}
+
+.bear-icon img {
+    width: 60px; /* Reduce size */
+    height: 60px;
+    margin-bottom: 15px; /* Compress margin */
+}
+
+.pers-container {
+    text-align: center;
+    margin-bottom: 20px; /* Compress margin */
+}
+
+.pers-container h3, .pers-container h4 {
+    font-size: 1.2rem; /* Make the text more compact */
+    margin-bottom: 8px; /* Compress margin */
+    color: white; /* Ensure the text is white */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Reduce gap */
+    margin-bottom: 30px; /* Compress margin */
+}
+
+.social-icons a img {
+    width: 35px; /* Reduce icon size */
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+h3 {
+    font-size: 1.2rem; /* Reduce font size */
+    margin: 15px 0; /* Compress margin */
+    color: white; /* Ensure the text is white */
+}
+
+.project-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Reduce gap */
+}
+
+.project-icons img {
+    width: 40px; /* Reduce size */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.project-icons img:hover {
+    transform: scale(1.2);
+}
