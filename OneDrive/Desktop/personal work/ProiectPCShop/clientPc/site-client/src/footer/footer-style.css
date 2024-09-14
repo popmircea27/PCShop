@@ -1,5 +1,5 @@
 .footer {
-    height: 500px;
+    height: 420px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -7,35 +7,37 @@
     justify-content: center;
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 6%, rgba(128,128,224,1) 46%, rgba(255,255,255,1) 100%);
-    color: white; /* Set text color to white */
+    color: white; 
 }
 
 .bear-icon img {
-    width: 60px; /* Reduce size */
+    width: 60px; 
     height: 60px;
-    margin-bottom: 15px; /* Compress margin */
+    margin-bottom: 10px; 
+    margin-top: 15px;
 }
 
 .pers-container {
     text-align: center;
-    margin-bottom: 20px; /* Compress margin */
+    margin-bottom: 10px; 
 }
 
 .pers-container h3, .pers-container h4 {
-    font-size: 1.2rem; /* Make the text more compact */
-    margin-bottom: 8px; /* Compress margin */
-    color: white; /* Ensure the text is white */
+    font-size: 24px; 
+    margin-bottom: 2px;
+    color: white; 
+    font-family:"Sora", sans-serif;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Reduce gap */
-    margin-bottom: 30px; /* Compress margin */
+    gap: 15px; 
+    margin-bottom: 10px; 
 }
 
 .social-icons a img {
-    width: 35px; /* Reduce icon size */
+    width: 45px; 
     height: 35px;
     transition: transform 0.3s ease;
 }
@@ -45,19 +47,20 @@
 }
 
 h3 {
-    font-size: 1.2rem; /* Reduce font size */
-    margin: 15px 0; /* Compress margin */
-    color: white; /* Ensure the text is white */
+    font-size: 1.2rem; 
+    margin: 15px 0; 
+    color: white; 
+    font-family:"Sora", sans-serif;
 }
 
 .project-icons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Reduce gap */
+    gap: 20px; 
 }
 
 .project-icons img {
-    width: 40px; /* Reduce size */
+    width: 40px; 
     height: 40px;
     transition: transform 0.3s ease;
 }
