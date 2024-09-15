@@ -1,25 +1,27 @@
 import React from "react";
-import Logo from "../components/logo/Logo";
-import TransparentButton from "../components/buttons/TransparentButton";
+import { useNavigate } from 'react-router-dom';
 
+
+import TransparentWhite from "../components/buttons/TranspararentWhite";
+import TransparentButton from "../components/buttons/TransparentButton";
 import userIcon from '../navBar/navBarAssets/user.svg'; 
 import searchIcon from '../navBar/navBarAssets/search.svg';
 import cartIcon from '../navBar/navBarAssets/cart.svg';
+import Logo from "../components/logo/Logo";
+
 import "../navBar/navBarStyle.css";
-import TransparentWhite from "../components/buttons/TranspararentWhite";
+
 function NavBar() {
     const handleClickUser = () => {
-        window.location.href = '/user';
+        navigate('/user');
     };
 
     const handleClickSearch = () => {
-    
-        
+        navigate('/search');    
     };
 
     const handleClickCart = () => {
-    
-        
+        navigate('/cart');
     };
     return (
         <>
@@ -31,9 +33,9 @@ function NavBar() {
 
                 <div className="button-container">
                     <TransparentButton text={"Laptops"} path={'/laptops'} />
-                    <TransparentWhite  text={"PC Office&Gaming"} path={'/'}/>  
-                    <TransparentWhite  text={"Components"} path={'/'} />      
-                    <TransparentButton text={"Periferics"} path={'/'} />
+                    <TransparentWhite  text={"PC Office&Gaming"} path={'/pc-office-gaming'}/>  
+                    <TransparentWhite  text={"Components"} path={'/components'} />      
+                    <TransparentButton text={"Periferics"} path={'/periferics'} />
                 </div>
 
                 <div className="user-container">
