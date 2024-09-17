@@ -1,9 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NavBar from "../navBar/NavBar";
-
+import Card from '../components/cards/Card';
+import laptop1 from "../laptopsDir/laptopAssets/laptop1.png";
+import laptop2 from "../laptopsDir/laptopAssets/laptop2.png";
+import laptop3 from "../laptopsDir/laptopAssets/laptop3.png";
+import laptop4 from "../laptopsDir/laptopAssets/laptop4.png";
+import laptop5 from "../laptopsDir/laptopAssets/laptop5.png";
+import "../laptopsDir/laptopStyles.css";
 const Laptops = () => {
   const [laptops, setLaptops] = useState([]);
+
+  // Obiect care mapează ID-urile laptopurilor la imaginile corespunzătoare
+  const laptopImages = {
+    1: laptop1,
+    2: laptop2,
+    3: laptop3,
+    4: laptop4,
+    5: laptop5,
+  };
 
   const getLaptops = async () => {
     console.log('Fetching Laptops...');
@@ -16,24 +31,23 @@ const Laptops = () => {
     }
   };
 
-  
   useEffect(() => {
     getLaptops();
   }, []);
 
-  
   return (
     <>
       <NavBar />
-      <ul>
+      <div className="laptop-list">
         {laptops.map((laptop) => (
-          <li key={laptop.id}>
-            <h2>{laptop.brand}</h2>
-            <p>Model: {laptop.model}</p>
-            <p>Price: {laptop.price}</p>
-          </li>
+          <Card 
+            key={laptop.id}
+            photo={laptopImages[laptop.id] || "default-image-path.png"}
+            nume={laptop.brand + " " + laptop.model} 
+            price={laptop.price} 
+          />
         ))}
-      </ul>
+      </div>
     </>
   );
 };

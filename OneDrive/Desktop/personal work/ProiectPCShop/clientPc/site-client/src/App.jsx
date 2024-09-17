@@ -5,6 +5,8 @@ import NavBar from './navBar/NavBar';
 import Footer from './footer/Footer';
 
 import Laptops from './laptopsDir/Laptops';
+import Card from './components/cards/Card';
+import FilterPanel from './laptopsDir/filter/FilterPanel';
 function App() {
   
 
@@ -21,9 +23,12 @@ function App() {
         {/* <Route path="/user" element={<User />} />
         <Route path="/cart" element={<Cart />} /> */}
         {/* <Route path="/search" element={<Search />} /> */}
+        
       </Routes>
     </Router>
+    <FilterPanel></FilterPanel>
     {/* <Footer /> */}
+    
 
     </>
   )

@@ -6,5 +6,5 @@ comands to initialise:
 -npm install framer-motion
 -npm install react-router-dom
 -npm install axios
--npm install axios
+
 

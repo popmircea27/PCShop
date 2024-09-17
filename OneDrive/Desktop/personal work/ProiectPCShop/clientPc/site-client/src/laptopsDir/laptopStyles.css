@@ -1,0 +1,14 @@
+.laptop-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; 
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(219, 226, 255);
+    border-radius: 30px;
+    margin: 20px auto;
+
+    max-width: 1400px;
+}
