@@ -1,0 +1,91 @@
+.main-pannel {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 40px;
+    min-height: 1130px;
+    height: 1080px;
+    width: 1200px;
+    font-family: "Sora", sans-serif;
+}
+
+.view-photo img {
+    width: 100%; 
+    height: auto; 
+    max-width: 600px; 
+    min-width: 300px;
+    max-height: 420px;
+}
+
+.info-aux {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.button-container-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.info-main-container {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .info-container {
+    flex: 2;
+    margin-right: 20px;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .side-info {
+    flex: 1;
+    background-color: aliceblue; /* Opțional: schimbă fundalul */
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Sora", sans-serif;
+  }
+  .logo-svg{
+    padding: 20px;
+    width: 120px;
+    height: 60px;
+  }
+
+  .procesorInfo{
+    display: flex;
+    align-items: center;
+    font-family: "Sora", sans-serif;
+  }
+  .VideoInfo{
+    display: flex;
+    align-items: center;
+    font-family: "Sora", sans-serif;
+  }
+  .OSsistem{
+    display: flex;
+    align-items: center;
+    font-family: "Sora", sans-serif;
+  }
+ 
+  .main-body{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }

@@ -1,0 +1,232 @@
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 100%; /* Lățime mai mare pentru cardurile de review */
+    max-width: 800px;
+    /* min-width: 1000px Lățimea maximă a cardului */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Sora", sans-serif;
+    height: auto;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    background-color: #6fa3ef;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 10px;
+    font-family: "Sora", sans-serif;
+}
+
+.user-name {
+    font-size: 16px;
+}
+
+.review-date {
+    font-size: 14px;
+    color: #888;
+}
+
+.review-body {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+.review-rating {
+    margin-top: 12px;
+}
+
+.stars {
+    color: gold;
+}
+
+.filled {
+    color: gold;
+}
+
+.empty {
+    color: #ddd;
+}
+
+.container-central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Sora", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.revies-body {
+    background-color: rgb(255, 255, 255);
+    width: 80%; /* Lățimea mai mare pentru containerul de recenzii */
+    max-width: 1000px; /* Lățimea maximă a containerului */
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.body-mare-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: "Sora", sans-serif;
+}
+
+.rating-summary {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rating-summary h4 {
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    margin-top: 10px;
+}
+
+.star-rating span {
+    font-size: 20px;
+}
+
+.add-review-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #846fef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+}
+
+.add-review-btn:hover {
+    background-color: #553c6b;
+}
+
+.lista-reviews {
+    width: 60%;
+    
+}
+.buttonSubmit{
+    background-color: #a079c3;
+    border: 50px;
+    height: 40%;
+    width: 30%;
+    min-width: 150px;
+    min-height: 40px;
+    font-family: "Sora", sans-serif;
+    border-radius: 8px;
+}
+.add-review-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: "Sora", sans-serif;
+}
+/* Stilizare pentru containerul slider-ului */
+.rating-style {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Stilizare pentru eticheta slider-ului */
+.rating-style label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Stilizare pentru slider (input type range) */
+.rating-style input[type="range"] {
+    -webkit-appearance: none; /* Elimină stilizarea implicită a browser-ului */
+    appearance: none;
+    width: 100%; /* Face slider-ul să ocupe întreaga lățime disponibilă */
+    height: 8px; /* Înălțimea slider-ului */
+    background: #ddd; /* Culoarea de fundal a slider-ului */
+    border-radius: 5px; /* Colțuri rotunjite */
+    outline: none; /* Elimină conturul implicit */
+    transition: background 0.3s ease; /* Adaugă o tranziție lină pentru schimbarea culorii */
+}
+
+/* Stilizare pentru slider când este focusat */
+.rating-style input[type="range"]:focus {
+    background: #aaa; /* Culoare mai închisă când slider-ul este activ */
+}
+
+/* Stilizare pentru thumb-ul (butonul de selectare) slider-ului */
+.rating-style input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Lățimea thumb-ului */
+    height: 20px; /* Înălțimea thumb-ului */
+    border-radius: 50%; /* Face thumb-ul rotund */
+    background: #000000; /* Culoarea thumb-ului */
+    cursor: pointer; /* Cursorul se schimbă la pointer */
+    transition: background 0.3s ease; /* Adaugă tranziție pentru schimbarea culorii */
+}
+
+/* Stilizare pentru thumb-ul slider-ului în Firefox */
+.rating-style input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+
+/* Stilizare pentru slider-ul înhover */
+.rating-style input[type="range"]:hover {
+    background: #bbb; /* Culoare de fundal mai deschisă la hover */
+}
+
+/* Stilizare pentru span-ul care afișează rating-ul */
+.rating-style span {
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}

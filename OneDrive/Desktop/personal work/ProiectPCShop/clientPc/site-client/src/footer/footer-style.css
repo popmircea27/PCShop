@@ -8,6 +8,7 @@
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 6%, rgba(128,128,224,1) 46%, rgba(255,255,255,1) 100%);
     color: white; 
+    border-radius: 20px;
 }
 
 .bear-icon img {
@@ -46,7 +47,7 @@
     transform: scale(1.2);
 }
 
-h3 {
+.h3-class{
     font-size: 1.2rem; 
     margin: 15px 0; 
     color: white; 

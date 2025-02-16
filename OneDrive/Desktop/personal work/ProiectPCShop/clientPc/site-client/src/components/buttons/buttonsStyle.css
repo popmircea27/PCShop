@@ -26,3 +26,23 @@
     font-size: 16px;
     color: white; /* Makes the text color white */
 }
+
+.add-cart-button{
+  background: rgb(55, 58, 70);
+
+  height: 80px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  font-family: "Sora", sans-serif;
+  border-radius: 30px;
+  border:none;
+  text-indent: 1cap;
+  color:aliceblue;
+
+}
+.add-cart-button img{
+  height: 45px;
+  width: 45px;
+  padding-left: 10px;
+}

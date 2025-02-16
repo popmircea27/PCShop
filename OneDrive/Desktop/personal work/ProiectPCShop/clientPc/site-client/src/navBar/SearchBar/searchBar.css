@@ -1,0 +1,168 @@
+/* Styling for the SearchBar component */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .search-bar input::placeholder {
+    color: #888;
+  }
+  
+  .search-bar input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+ 
+  .product-list {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .product-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .product-list li {
+    background:none;
+    border-radius: 10px;
+    
+    padding: 15px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  
+  .product-list h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .product-list p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .product-list .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0a131e;
+  }
+  
+  .product-list .stock {
+    font-size: 14px;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .product-list .no-products {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+  }
+  .search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .list-container-div {
+    width: 100%; /* Take the full width of the parent container */
+    max-height: 400px; /* Constrain height for the results */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+    padding: 10px; /* Add padding around the results */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add space between list items */
+}
+
+  .a1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .search-bar input {
+      width: 90%;
+    }
+  }
+  /* Styling for the overlay and search results */
+.search-results-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundal semi-transparent */
+    z-index: 1000; /* Peste tot conținutul */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aliniază rezultatele deasupra */
+    padding-top: 80px; /* Lasă spațiu pentru navbar */
+}
+
+.search-results-container {
+    background: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1001; /* Peste fundal */
+}
+
+.search-results-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-results-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.no-results-message {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+}

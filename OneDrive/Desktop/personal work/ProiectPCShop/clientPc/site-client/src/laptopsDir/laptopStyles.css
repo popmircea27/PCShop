@@ -1,14 +1,116 @@
+.body-laptop-page {
+    display: flex;
+    flex-direction: row; 
+}
+
 .laptop-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 30px; 
-    padding-top: 20px;
-    padding-bottom: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
+    grid-template-columns: repeat(4, 1fr); /* 4 coloane pe rând pe ecrane mari */
+    gap: 20px; /* Gap mai mare între carduri */
+    padding: 20px; /* Padding uniform pentru laptop-list */
     background-color: rgb(219, 226, 255);
     border-radius: 30px;
-    margin: 20px auto;
-
+    margin: 5px auto;
     max-width: 1400px;
+}
+
+@media (max-width: 1200px) {
+    .laptop-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .laptop-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 5px; /* Gap de 5px între carduri pe ecrane mici */
+    }
+}
+
+.filter-panel {
+    font-family: "Sora", sans-serif;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 180px;
+    background-color: #f9f9f9;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Margin între filter și lista de laptopuri */
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filterText {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.filter-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.filter-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.price-filter, .dropdown-filter, .rating-filter, .processor-filter, .video-card-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+input[type="number"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.price-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.teko-heading {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Media Queries pentru responsivitate */
+@media (max-width: 768px) {
+    .filter-panel {
+        width: 100%; /* Panoul de filtre va ocupa toată lățimea pe ecrane mici */
+        margin-right: 0; /* Elimină margin */
+        margin-bottom: 20px; /* Margin între filtre și laptopuri */
+    }
+
+    .body-laptop-page {
+        flex-direction: column; /* Schimbă orientarea în coloană pe ecrane mici */
+        align-items: center; /* Center-align pe ecrane mici */
+    }
 }

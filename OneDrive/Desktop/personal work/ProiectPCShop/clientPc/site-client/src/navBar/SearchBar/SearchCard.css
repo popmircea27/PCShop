@@ -1,0 +1,15 @@
+.container-Search {
+    width: 500px; /* Adjust width to fit your desired space */
+    max-height: 500px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Add scroll for overflow content */
+    margin: 0 auto; /* Center the container */
+    background-color: #fefefe; /* Optional: Add a background color for contrast */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a card effect */
+    padding: 20px; /* Add padding inside the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: "Sora", sans-serif;
+}

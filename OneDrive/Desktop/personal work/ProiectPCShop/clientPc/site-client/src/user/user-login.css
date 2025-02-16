@@ -1,0 +1,137 @@
+.login-body {
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    flex-direction: column;
+    padding: 20px;
+    margin-top: -140px;
+    font-family: "Sora", sans-serif;
+    color: aliceblue;
+}
+
+.form-style {
+    background-color: #fff;
+    padding: 20px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    padding-top: 30px;
+    max-width: 350px; /* Set max-width instead of fixed width */
+    width: 100%; /* Allow it to shrink and grow */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.input-style {
+    border-radius: 30px;
+    height: 50px;
+    width: 100%;
+    border-left: 0px; /* Full width for responsiveness */
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    font-size: large;
+    border: none;
+    box-shadow: 9px 9px 15px rgba(156, 156, 156, 0.2);
+}
+
+.button-style {
+    border-radius: 20px;
+    height: 45px; 
+    width: 100%; /* Full width to ensure consistency */
+    max-width: 250px; /* Set a max width for larger screens */
+    font-family: "Sora", sans-serif;
+    font-size: large;
+    border: none;
+    background-color: #303252;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.button-style:hover {
+    background-color: #27294a; 
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgb(111, 92, 159);
+    background: radial-gradient(circle, rgba(111,92,159,1) 36%, rgba(255,255,255,1) 88%);
+    height: 60px;
+    width: 100%; /* Full width for responsive layout */
+    padding: 0 10px;
+    border-radius: 5px;
+    padding-right: 30px;
+}
+
+.icon-style {
+    width: 45px;
+    height: 45px;
+}
+
+.other-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%; 
+}
+
+.password-reset, .new-acc {
+    width: 100%;
+    max-width: 250px; /* Match the login button */
+}
+
+.password-reset button, .new-acc button {
+    width: 100%; 
+    border-radius: 20px;
+    height: 45px; 
+    font-family: "Sora", sans-serif;
+    font-size: large;
+    border: none;
+    background-color: #303252;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.password-reset button:hover, .new-acc button:hover {
+    background-color: #27294a; 
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .form-style {
+        max-width: 90vw; /* Adjust form width for smaller screens */
+    }
+
+    .input-style, .button-style, .password-reset button, .new-acc button {
+        width: 90%; /* Adjust input and button size */
+    }
+
+    .button-style, .password-reset button, .new-acc button {
+        height: 40px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .form-style {
+        max-width: 95vw;
+    }
+
+    .input-container {
+        height: 50px;
+    }
+
+    .input-style {
+        font-size: medium; 
+    }
+
+    .button-style, .password-reset button, .new-acc button {
+        height: 40px;
+        font-size: medium;
+    }
+}

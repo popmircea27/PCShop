@@ -6,5 +6,7 @@ comands to initialise:
 -npm install framer-motion
 -npm install react-router-dom
 -npm install axios
-
+-npm install react-multi-carousel --save
+-npm install js-cookie
+-npm install date-fns
 

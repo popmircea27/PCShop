@@ -34,7 +34,7 @@ function Footer() {
                 </div>
 
                 <div className="pers-container">
-                    <h3>&copy; Project made by Pop Mircea</h3>
+                    <h3 className="h3-class">&copy; Project made by Pop Mircea</h3>
                     <h4>My Socials</h4>
                     <div className="social-icons">
                         <a href="https://www.linkedin.com/in/pop-mircea-stefan-830014270/" target="_blank" rel="noopener noreferrer">

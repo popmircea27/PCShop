@@ -1,0 +1,31 @@
+.suggested-text {
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    background:transparent;
+    color: rgb(0, 0, 0); /* Change text color to white for better contrast */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 5px; /* Add rounded corners */
+    margin-bottom: 20px; /* Add space below the heading */
+    
+}
+.suggested-body {
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    margin: 0 auto; /* Center the body */
+    
+   
+}
+.center-body{
+    background: rgb(194,195,200);
+background: -moz-linear-gradient(0deg, rgba(194,195,200,1) 24%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(194,195,200,1) 24%, rgba(255,255,255,1) 100%);
+background: linear-gradient(0deg, rgba(194,195,200,1) 24%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c2c3c8",endColorstr="#ffffff",GradientType=1);
+    border-radius:90px;
+    padding-bottom: 30px;
+}
+.slideshow-body{
+    margin: 0 auto; /* Center the slideshow body */
+    padding: 5px; /* Add padding around the slideshow */
+}
+

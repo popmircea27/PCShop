@@ -9,12 +9,24 @@ import "../cards/cardStyle.css";
 
 
 function Card(props){
-
+    const navigate = useNavigate();
     const handleClickSee = () => {
-        navigate('/{props.id}');
+        navigate(`/laptops/details/${props.id}`, {
+            state: {
+                id: props.id,
+                nume: props.nume,
+                model: props.model,
+                price: props.price,
+                photo: props.photo,
+                procesor: props.procesor,
+                placaVideo: props.placaVideo,
+            }
+        });
+        console.log("ceva");
     };
+
     const handleClickAdaugaCos = () => {
-        navigate('/{props.id}');
+        navigate(`/${props.id}`); 
     };
     return (
         <>
