@@ -15,16 +15,30 @@ public class Laptop {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String brand;
-    @Column(nullable = false)
+
+    @Column(nullable = true)
     private String model;
-    @Column(nullable = false)
+
+    @Column(nullable = true)
     private BigDecimal price;
-    @Column(nullable = false)
+
+    @Column(nullable = true)
     private String specifications;
-    @Column(nullable = false)
+
+    @Column(nullable = true)
     private int stock;
+
+    @Column(name = "laptop_type", nullable = true)
+    private String laptopType;
+
+    @Column(name = "processor_type", nullable = true)
+    private String processorType;
+
+    @Column(name = "video_card_type", nullable = true)
+    private String videoCardType;
+
 
     public Long getId() {
         return id;
@@ -74,6 +88,30 @@ public class Laptop {
         this.stock = stock;
     }
 
+    public String getLaptopType() {
+        return laptopType;
+    }
+
+    public void setLaptopType(String laptopType) {
+        this.laptopType = laptopType;
+    }
+
+    public String getProcessorType() {
+        return processorType;
+    }
+
+    public void setProcessorType(String processorType) {
+        this.processorType = processorType;
+    }
+
+    public String getVideoCardType() {
+        return videoCardType;
+    }
+
+    public void setVideoCardType(String videoCardType) {
+        this.videoCardType = videoCardType;
+    }
+
     @Override
     public String toString() {
         return "Laptop{" +
@@ -83,6 +121,9 @@ public class Laptop {
                 ", price=" + price +
                 ", specifications='" + specifications + '\'' +
                 ", stock=" + stock +
+                ", laptopType='" + laptopType + '\'' +
+                ", processorType='" + processorType + '\'' +
+                ", videoCardType='" + videoCardType + '\'' +
                 '}';
     }
 }
